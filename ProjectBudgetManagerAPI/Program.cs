@@ -9,6 +9,12 @@ builder.Services.AddDbContext<ProjectBudgetManagerDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProjectBudgetManagerConnectionString"));
 });
 
+builder.Services.AddCors(options => options.AddPolicy(name: "NgOrigins",
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+    }));
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -24,12 +30,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-builder.Services.AddCors(options => options.AddPolicy(name: "NgOrigins",
-    policy =>
-    {
-        policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyMethod().AllowAnyHeader();
-    }));
 
 app.UseCors("NgOrigins");
 
