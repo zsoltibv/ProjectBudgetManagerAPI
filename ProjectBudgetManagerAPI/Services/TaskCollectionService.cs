@@ -14,10 +14,14 @@ namespace ProjectBudgetManagerAPI.Services
             _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
         }
 
-        public async Task<List<Task>> GetAll()
+        public async Task<List<Task>> GetAll(Guid employeeId)
         {
-            var result = await _projectBudgetManagerDbContext.Tasks.ToListAsync();
+            var result = await _projectBudgetManagerDbContext.EmployeeTasks
+                               .Where(et => et.EmployeeId == employeeId)
+                               .Select(et => et.Task)
+                               .ToListAsync();
             return result;
         }
+
     }
 }

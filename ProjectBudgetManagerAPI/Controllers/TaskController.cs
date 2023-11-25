@@ -17,11 +17,18 @@ namespace ProjectBudgetManagerAPI.Controllers
             _taskCollectionService = taskCollectionService ?? throw new ArgumentNullException(nameof(TaskCollectionService));
         }
 
-        [HttpGet("GetAllTasks")]
-        public async Task<IActionResult> GetAllTasks()
+        [HttpGet("GetAllTasks/{employeeId}")]
+        public async Task<IActionResult> GetAllTasks(Guid employeeId)
         {
-            List<Task> tasks = await _taskCollectionService.GetAll();
-            return Ok(tasks);
+            try
+            {
+                var tasks = await _taskCollectionService.GetAll(employeeId);
+                return Ok(tasks);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
         }
     }
 }
