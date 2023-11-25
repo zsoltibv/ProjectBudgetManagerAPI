@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProjectBudgetManagerAPI.Config;
+using ProjectBudgetManagerAPI.Services;
+using ProjectBudgetManagerAPI.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IProjectCollectionService, ProjectCollectionService>();
+builder.Services.AddScoped<ITaskCollectionService, TaskCollectionService>();
 
 var app = builder.Build();
 
