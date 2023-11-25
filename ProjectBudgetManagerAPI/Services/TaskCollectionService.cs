@@ -1,0 +1,23 @@
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectBudgetManagerAPI.Config;
+using ProjectBudgetManagerAPI.Services.Interfaces;
+using Task = ProjectBudgetManagerAPI.Models.Task;
+
+namespace ProjectBudgetManagerAPI.Services
+{
+    public class TaskCollectionService : ITaskCollectionService
+    {
+        private readonly ProjectBudgetManagerDbContext _projectBudgetManagerDbContext;
+
+        public TaskCollectionService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
+        {
+            _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
+        }
+
+        public async Task<List<Task>> GetAll()
+        {
+            var result = await _projectBudgetManagerDbContext.Tasks.ToListAsync();
+            return result;
+        }
+    }
+}
