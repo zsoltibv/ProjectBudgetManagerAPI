@@ -3334,24 +3334,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alessia Andrea\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\zsolti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alessia Andrea\\Desktop\\Project\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI.csproj",
+      "projectUniqueName": "V:\\Talenting Software\\Project Budget Manager\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI.csproj",
       "projectName": "ProjectBudgetManagerAPI",
-      "projectPath": "C:\\Users\\Alessia Andrea\\Desktop\\Project\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI.csproj",
-      "packagesPath": "C:\\Users\\Alessia Andrea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alessia Andrea\\Desktop\\Project\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\obj\\",
+      "projectPath": "V:\\Talenting Software\\Project Budget Manager\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI.csproj",
+      "packagesPath": "C:\\Users\\zsolti\\.nuget\\packages\\",
+      "outputPath": "V:\\Talenting Software\\Project Budget Manager\\ProjectBudgetManagerAPI\\ProjectBudgetManagerAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Alessia Andrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\zsolti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3359,8 +3354,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3421,7 +3414,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
