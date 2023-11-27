@@ -8,5 +8,6 @@ namespace ProjectBudgetManagerAPI.Services.Interfaces
         Task<List<Project>> GetAll();
 
         Task<ProjectStatistics> GetStatistics(Guid projectId);
+        Task<Project> GetProjectById(Guid projectId);
     }
 }
