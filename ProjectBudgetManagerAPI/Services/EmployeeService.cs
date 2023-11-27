@@ -19,5 +19,11 @@ namespace ProjectBudgetManagerAPI.Services
             var result = await _projectBudgetManagerDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
             return result;
         }
+        public async Task<List<Employee>> GetAllEmployees()
+        {
+            var result = await _projectBudgetManagerDbContext.Employees.ToListAsync();
+            return result;
+        }
+
     }
 }
