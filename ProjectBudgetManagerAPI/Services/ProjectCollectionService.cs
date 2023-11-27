@@ -57,4 +57,10 @@ public class ProjectCollectionService : IProjectCollectionService
             NumberOfDoneTasksSpecialProject = numberOfDoneTasksSpecialProject
         };
     }
+
+    public async Task<Project> GetProjectById(Guid projectId)
+    {
+        var result = await _projectBudgetManagerDbContext.Projects.FirstOrDefaultAsync(p => p.ProjectId == projectId);
+        return result;
+    }
 }
