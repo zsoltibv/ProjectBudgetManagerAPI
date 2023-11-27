@@ -48,8 +48,8 @@ namespace ProjectBudgetManagerAPI.Controllers
         {
             try
             {
-                var tasks = await _projectCollectionService.GetProjectById(projectId);
-                return Ok(tasks);
+                var project = await _projectCollectionService.GetProjectById(projectId);
+                return Ok(project);
             }
             catch (Exception ex)
             {
