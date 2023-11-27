@@ -3,6 +3,7 @@ using ProjectBudgetManagerAPI.Config;
 using ProjectBudgetManagerAPI.Models;
 using ProjectBudgetManagerAPI.Helpers;
 using ProjectBudgetManagerAPI.Services.Interfaces;
+using Task = ProjectBudgetManagerAPI.Models.Task;
 
 public class ProjectService : IProjectService
 {
@@ -61,6 +62,12 @@ public class ProjectService : IProjectService
     public async Task<Project> GetProjectById(Guid projectId)
     {
         var result = await _projectBudgetManagerDbContext.Projects.FirstOrDefaultAsync(p => p.ProjectId == projectId);
+        return result;
+    }
+
+    public async Task<List<Task>> GetTasksThatBelongToProject(Guid projectId)
+    {
+        var result = await _projectBudgetManagerDbContext.Tasks.Where(t => t.ProjectId == projectId).ToListAsync();
         return result;
     }
 }

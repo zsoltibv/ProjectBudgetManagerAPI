@@ -57,5 +57,18 @@ namespace ProjectBudgetManagerAPI.Controllers
             }
         }
 
+        [HttpGet("GeTasksThatBelongToProject/{projectId}")]
+        public async Task<IActionResult> GetTasksThatBelongToProject(Guid projectId)
+        {
+            try
+            {
+                var tasks = await _projectService.GetTasksThatBelongToProject(projectId);
+                return Ok(tasks);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using ProjectBudgetManagerAPI.Models;
 using ProjectBudgetManagerAPI.Helpers;
+using Task = ProjectBudgetManagerAPI.Models.Task;
 
 namespace ProjectBudgetManagerAPI.Services.Interfaces
 {
@@ -9,5 +10,6 @@ namespace ProjectBudgetManagerAPI.Services.Interfaces
 
         Task<ProjectStatistics> GetStatistics(Guid projectId);
         Task<Project> GetProjectById(Guid projectId);
+        Task<List<Task>> GetTasksThatBelongToProject(Guid projectId);
     }
 }
