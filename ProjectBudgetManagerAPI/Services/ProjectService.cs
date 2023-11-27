@@ -4,11 +4,11 @@ using ProjectBudgetManagerAPI.Models;
 using ProjectBudgetManagerAPI.Helpers;
 using ProjectBudgetManagerAPI.Services.Interfaces;
 
-public class ProjectCollectionService : IProjectCollectionService
+public class ProjectService : IProjectService
 {
     private readonly ProjectBudgetManagerDbContext _projectBudgetManagerDbContext;
 
-    public ProjectCollectionService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
+    public ProjectService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
     {
         _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
     }
