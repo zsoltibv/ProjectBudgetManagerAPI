@@ -24,6 +24,11 @@ namespace ProjectBudgetManagerAPI.Services
                               .ToListAsync();
             return result;
         }
+        public async Task<Task> GetTaskById(Guid taskId)
+        {
+            var result = await _projectBudgetManagerDbContext.Tasks.FirstOrDefaultAsync(p => p.TaskId == taskId);
+            return result;
+        }
 
     }
 }
