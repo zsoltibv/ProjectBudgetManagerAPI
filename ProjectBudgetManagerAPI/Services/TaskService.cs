@@ -5,11 +5,11 @@ using Task = ProjectBudgetManagerAPI.Models.Task;
 
 namespace ProjectBudgetManagerAPI.Services
 {
-    public class TaskCollectionService : ITaskCollectionService
+    public class TaskService : ITaskService
     {
         private readonly ProjectBudgetManagerDbContext _projectBudgetManagerDbContext;
 
-        public TaskCollectionService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
+        public TaskService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
         {
             _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
         }
