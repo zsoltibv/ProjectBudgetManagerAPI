@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjectBudgetManagerAPI.Models;
 using ProjectBudgetManagerAPI.Services;
 using ProjectBudgetManagerAPI.Services.Interfaces;
 
@@ -27,6 +28,13 @@ namespace ProjectBudgetManagerAPI.Controllers
             {
                 return StatusCode(500);
             }
+        }
+
+        [HttpGet("GetAllEmployees")]
+        public async Task<IActionResult> GetAllEmployees()
+        {
+            List<Employee> employees = await _employeeService.GetAllEmployees();
+            return Ok(employees);
         }
     }
 }
