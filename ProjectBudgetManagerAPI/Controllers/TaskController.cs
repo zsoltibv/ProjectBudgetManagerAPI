@@ -30,5 +30,19 @@ namespace ProjectBudgetManagerAPI.Controllers
                 return StatusCode(500);
             }
         }
+
+        [HttpGet("GetTaskById/{taskId}")]
+        public async Task<IActionResult> GetTaskById(Guid taskId)
+        {
+            try
+            {
+                var task = await _taskCollectionService.GetTaskById(taskId);
+                return Ok(task);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
     }
 }
