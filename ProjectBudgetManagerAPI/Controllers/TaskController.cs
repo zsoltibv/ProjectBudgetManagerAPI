@@ -36,7 +36,7 @@ namespace ProjectBudgetManagerAPI.Controllers
         {
             try
             {
-                var task = await _taskCollectionService.GetTaskById(taskId);
+                var task = await _taskService.GetTaskById(taskId);
                 return Ok(task);
             }
             catch (Exception ex)
