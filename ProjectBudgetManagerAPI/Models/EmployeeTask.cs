@@ -6,9 +6,8 @@ namespace ProjectBudgetManagerAPI.Models
 {
     public class EmployeeTask
     {
-        [Key]
+        public Guid EmployeeTaskId { get; set; }
         public Guid EmployeeId { get; set; }
-        [Key]
         public Guid TaskId { get; set; }
 
         public int Hours { get; set; }
