@@ -2,8 +2,10 @@
 
 namespace ProjectBudgetManagerAPI.Services.Interfaces
 {
-    public interface ITaskCollectionService 
+    public interface ITaskService 
     {
         Task<List<Task>> GetAll(Guid employeeId);
+
+        Task<Task> GetTaskById(Guid taskId);
     }
 }

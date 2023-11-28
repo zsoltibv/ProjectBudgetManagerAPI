@@ -5,11 +5,11 @@ using Task = ProjectBudgetManagerAPI.Models.Task;
 
 namespace ProjectBudgetManagerAPI.Services
 {
-    public class TaskCollectionService : ITaskCollectionService
+    public class TaskService : ITaskService
     {
         private readonly ProjectBudgetManagerDbContext _projectBudgetManagerDbContext;
 
-        public TaskCollectionService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
+        public TaskService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
         {
             _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
         }
@@ -19,9 +19,14 @@ namespace ProjectBudgetManagerAPI.Services
             var result = await _projectBudgetManagerDbContext.EmployeeTasks
                               .Where(et => et.EmployeeId == employeeId)
                               .Include(et => et.Task)
-                                  .ThenInclude(t => t.Project)
+                              .ThenInclude(t => t.Project)
                               .Select(et => et.Task)
                               .ToListAsync();
+            return result;
+        }
+        public async Task<Task> GetTaskById(Guid taskId)
+        {
+            var result = await _projectBudgetManagerDbContext.Tasks.FirstOrDefaultAsync(p => p.TaskId == taskId);
             return result;
         }
 

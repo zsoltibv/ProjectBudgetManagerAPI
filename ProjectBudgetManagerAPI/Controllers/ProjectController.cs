@@ -9,17 +9,17 @@ namespace ProjectBudgetManagerAPI.Controllers
     [Route("api/[controller]")]
     public class ProjectController : ControllerBase
     {
-        private IProjectCollectionService _projectCollectionService;
+        private IProjectService _projectService;
 
-        public ProjectController(IProjectCollectionService projectCollectionService)
+        public ProjectController(IProjectService projectService)
         {
-            _projectCollectionService = projectCollectionService ?? throw new ArgumentNullException(nameof(ProjectCollectionService));
+            _projectService = projectService ?? throw new ArgumentNullException(nameof(ProjectService));
         }
 
         [HttpGet("GetAllProjects")]
         public async Task<IActionResult> GetAllProjects()
         {
-            List<Project> projects = await _projectCollectionService.GetAll();
+            List<Project> projects = await _projectService.GetAll();
             return Ok(projects);
         }
 
@@ -28,7 +28,7 @@ namespace ProjectBudgetManagerAPI.Controllers
         {
             try
             {
-                var statistics = await _projectCollectionService.GetStatistics(projectId);
+                var statistics = await _projectService.GetStatistics(projectId);
 
                 if (statistics == null)
                 {
@@ -43,7 +43,19 @@ namespace ProjectBudgetManagerAPI.Controllers
             }
         }
 
-
+        [HttpGet("GetProjectById/{projectId}")]
+        public async Task<IActionResult> GetProjectById(Guid projectId)
+        {
+            try
+            {
+                var project = await _projectService.GetProjectById(projectId);
+                return Ok(project);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
 
     }
 }

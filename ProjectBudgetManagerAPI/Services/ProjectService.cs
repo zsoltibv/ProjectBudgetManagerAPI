@@ -4,11 +4,11 @@ using ProjectBudgetManagerAPI.Models;
 using ProjectBudgetManagerAPI.Helpers;
 using ProjectBudgetManagerAPI.Services.Interfaces;
 
-public class ProjectCollectionService : IProjectCollectionService
+public class ProjectService : IProjectService
 {
     private readonly ProjectBudgetManagerDbContext _projectBudgetManagerDbContext;
 
-    public ProjectCollectionService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
+    public ProjectService(ProjectBudgetManagerDbContext projectBudgetManagerDbContext)
     {
         _projectBudgetManagerDbContext = projectBudgetManagerDbContext;
     }
@@ -56,5 +56,11 @@ public class ProjectCollectionService : IProjectCollectionService
             NumberOfHoursNormalProject = numberOfHoursNormalProject,
             NumberOfDoneTasksSpecialProject = numberOfDoneTasksSpecialProject
         };
+    }
+
+    public async Task<Project> GetProjectById(Guid projectId)
+    {
+        var result = await _projectBudgetManagerDbContext.Projects.FirstOrDefaultAsync(p => p.ProjectId == projectId);
+        return result;
     }
 }
