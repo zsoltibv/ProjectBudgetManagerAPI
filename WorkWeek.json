@@ -1,0 +1,1475 @@
+{
+  "Employees": [
+    {
+      "Name": "Gigel Popescu",
+      "HourlyPay": 10,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 1",
+                  "Hours": 2
+                },
+                {
+                  "Name": "lorem ipsum 2",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 3",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "SPECIAL_PROJ",
+              "Tasks": [
+                {
+                  "Name": "spc task abc_1",
+                  "Hours": 4,
+                  "Price": 0
+                },
+                {
+                  "Name": "spc task abc_2",
+                  "Hours": 3,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 1",
+                  "Hours": 2
+                },
+                {
+                  "Name": "lorem ipsum 2",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 3",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "SPECIAL_PROJ",
+              "Tasks": [
+                {
+                  "Name": "spc task abc_1",
+                  "Hours": 4,
+                  "Price": 0
+                },
+                {
+                  "Name": "spc task abc_2",
+                  "Hours": 3,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 1",
+                  "Hours": 2
+                },
+                {
+                  "Name": "lorem ipsum 2",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 3",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "SPECIAL_PROJ",
+              "Tasks": [
+                {
+                  "Name": "spc task abc_1",
+                  "Hours": 4,
+                  "Price": 0
+                },
+                {
+                  "Name": "spc task abc_2",
+                  "Hours": 3,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 1",
+                  "Hours": 2
+                },
+                {
+                  "Name": "lorem ipsum 2",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 3",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "SPECIAL_PROJ",
+              "Tasks": [
+                {
+                  "Name": "spc task abc_1",
+                  "Hours": 4,
+                  "Price": 0
+                },
+                {
+                  "Name": "spc task abc_2",
+                  "Hours": 3,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 1",
+                  "Hours": 2
+                },
+                {
+                  "Name": "lorem ipsum 2",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 3",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "SPECIAL_PROJ",
+              "Tasks": [
+                {
+                  "Name": "spc task abc_1",
+                  "Hours": 4,
+                  "Price": 200
+                },
+                {
+                  "Name": "spc task abc_2",
+                  "Hours": 3,
+                  "Price": 200
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 80,
+      "GrossAmount": 850,
+      "Tax": 170
+    },
+    {
+      "Name": "Vasile Ionescu",
+      "HourlyPay": 15,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 5",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 5",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 5",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 5",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 5",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 45,
+      "GrossAmount": 675,
+      "Tax": 135
+    },
+    {
+      "Name": "George Dumitrescu",
+      "HourlyPay": 20,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 6",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 6",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 6",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 6",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 6",
+                  "Hours": 3
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 15,
+      "GrossAmount": 300,
+      "Tax": 60
+    },
+    {
+      "Name": "Marian Moldovan",
+      "HourlyPay": 15,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 7",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 11",
+                  "Hours": 6
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 7",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 11",
+                  "Hours": 6
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 7",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 11",
+                  "Hours": 6
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 7",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 11",
+                  "Hours": 6
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 7",
+                  "Hours": 4
+                },
+                {
+                  "Name": "lorem ipsum 11",
+                  "Hours": 6
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 50,
+      "GrossAmount": 750,
+      "Tax": 150
+    },
+    {
+      "Name": "Vasile Muntean",
+      "HourlyPay": 10,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 8",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 8",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 8",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 8",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 8",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 45,
+      "GrossAmount": 450,
+      "Tax": 90
+    },
+    {
+      "Name": "Ioan Muntean",
+      "HourlyPay": 5,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 9
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "ABC_PROJECT",
+              "Tasks": [
+                {
+                  "Name": "lorem ipsum 9",
+                  "Hours": 4
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 49,
+      "GrossAmount": 245,
+      "Tax": 49
+    },
+    {
+      "Name": "Mihai Gheorghita",
+      "HourlyPay": 17.5,
+      "Days": [
+        {
+          "Name": "Monday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Tuesday",
+          "Date": "06/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Wednesday",
+          "Date": "07/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Thursday",
+          "Date": "08/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Friday",
+          "Date": "05/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Saturday",
+          "Date": "09/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Sunday",
+          "Date": "10/09/2022",
+          "NormalProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0
+                }
+              ]
+            }
+          ],
+          "SpecialProjects": [
+            {
+              "Name": "",
+              "Tasks": [
+                {
+                  "Name": "",
+                  "Hours": 0,
+                  "Price": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "TotalHours": 0,
+      "GrossAmount": 0,
+      "Tax": 0
+    }
+  ]
+}
