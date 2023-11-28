@@ -4,13 +4,13 @@ namespace ProjectBudgetManagerAPI.Services.Interfaces
 {
     public interface IExportDataToDbService
     {
-        public Task AddEmployees(string url);
-        public Task AddProjects(string url);
-        public Task AddBudget(string url);
-        public Task AddTasks(string url);
-        public Task AddEmployeeTask(string url);
-        public Task AddWeeklySalary(string url);
+        public Task AddEmployees();
+        public Task AddProjects();
+        public Task AddBudget();
+        public Task AddTasks();
+        public Task AddEmployeeTask();
+        public Task AddWeeklySalary();
         public Task AddAllData(EmployeesDS employeesDS);
-        public Task UpdateWeeklySalaryIsPaid(string url, string employeeName, DateTime startDate, DateTime endDate);
+        public Task UpdateWeeklySalaryIsPaid(string employeeName, DateTime startDate, DateTime endDate);
     }
 }

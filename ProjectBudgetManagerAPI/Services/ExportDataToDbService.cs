@@ -28,12 +28,72 @@ namespace ProjectBudgetManagerAPI.Services
             _mapper = mapper;
         }
 
-        public System.Threading.Tasks.Task AddBudget(string url)
+        public async System.Threading.Tasks.Task AddBudget()
         {
-            throw new NotImplementedException();
+            HashSet<string> normalProjects = new HashSet<string>();
+            HashSet<string> specialProjects = new HashSet<string>();
+
+            Random rnd = new Random();
+
+            foreach (var employee in _employeesDS.Employees)
+            {
+                foreach (var day in employee.Days)
+                {
+                    foreach (var normalProject in day.NormalProjects)
+                    {
+                        if (normalProject.Name != string.Empty)
+                        {
+                            var project = await _projectBudgetManagerDbContext.Projects.FirstOrDefaultAsync(p => p.Name == normalProject.Name);
+
+                            BudgetDTO budgetDTO = new()
+                            {
+                                BudgetId = Guid.NewGuid(),
+                                ProjectId = project.ProjectId,
+                                InitialBudget = rnd.Next(10000, 99999),
+                                SpentBudget = 0
+                            };
+
+                            if (!normalProjects.Contains(normalProject.Name))
+                            {
+                                var mapped = _mapper.Map<BudgetDTO, Budget>(budgetDTO);
+
+                                await _projectBudgetManagerDbContext.AddAsync(mapped);
+                                await _projectBudgetManagerDbContext.SaveChangesAsync();
+
+                                normalProjects.Add(normalProject.Name);
+                            }
+                        }
+                    }
+                    foreach (var specialProject in day.SpecialProjects)
+                    {
+                        if (specialProject.Name != string.Empty)
+                        {
+                            var project = await _projectBudgetManagerDbContext.Projects.FirstOrDefaultAsync(p => p.Name == specialProject.Name);
+
+                            BudgetDTO budgetDTO = new()
+                            {
+                                BudgetId = Guid.NewGuid(),
+                                ProjectId = project.ProjectId,
+                                InitialBudget = rnd.Next(100000, 999999),
+                                SpentBudget = 0
+                            };
+
+                            if (!specialProjects.Contains(specialProject.Name))
+                            {
+                                var mapped = _mapper.Map<BudgetDTO, Budget>(budgetDTO);
+
+                                await _projectBudgetManagerDbContext.AddAsync(mapped);
+                                await _projectBudgetManagerDbContext.SaveChangesAsync();
+
+                                specialProjects.Add(specialProject.Name);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        public async System.Threading.Tasks.Task AddEmployees(string url)
+        public async System.Threading.Tasks.Task AddEmployees()
         {
             foreach(var employee in _employeesDS.Employees)
             {
@@ -51,7 +111,7 @@ namespace ProjectBudgetManagerAPI.Services
             }
         }
 
-        public async System.Threading.Tasks.Task AddEmployeeTask(string url)
+        public async System.Threading.Tasks.Task AddEmployeeTask()
         {
             foreach(var employee in _employeesDS.Employees)
             {
@@ -111,7 +171,7 @@ namespace ProjectBudgetManagerAPI.Services
             }
         }
 
-        public async System.Threading.Tasks.Task AddProjects(string url)
+        public async System.Threading.Tasks.Task AddProjects()
         {
             HashSet<string> normalProjects = new();
             HashSet<string> specialProjects = new();
@@ -168,7 +228,7 @@ namespace ProjectBudgetManagerAPI.Services
             }
         }
 
-        public async System.Threading.Tasks.Task AddTasks(string url)
+        public async System.Threading.Tasks.Task AddTasks()
         {
             HashSet<string> tasks = new();
 
@@ -238,7 +298,7 @@ namespace ProjectBudgetManagerAPI.Services
             }
         }
 
-        public async System.Threading.Tasks.Task AddWeeklySalary(string url)
+        public async System.Threading.Tasks.Task AddWeeklySalary()
         {
             foreach(var employee in _employeesDS.Employees) 
             {
@@ -261,7 +321,6 @@ namespace ProjectBudgetManagerAPI.Services
 
                 var mapped = _mapper.Map<WeeklySalaryDTO, WeeklySalary>(weeklySalaryDTO);
 
-
                 await _projectBudgetManagerDbContext.AddAsync(mapped);
                 await _projectBudgetManagerDbContext.SaveChangesAsync();
             }
@@ -269,17 +328,17 @@ namespace ProjectBudgetManagerAPI.Services
 
         public async System.Threading.Tasks.Task AddAllData(EmployeesDS employeesDS)
         {
-            string url = "http://localhost:5238/api/ExportDataToDb/AddAllData";
             _employeesDS = employeesDS;
 
-            await AddEmployees(url);
-            await AddProjects(url);
-            await AddTasks(url);
-            await AddEmployeeTask(url);
-            await AddWeeklySalary(url);
+            await AddEmployees();
+            await AddProjects();
+            await AddBudget();
+            await AddTasks();
+            await AddEmployeeTask();
+            await AddWeeklySalary();
         }
 
-        public System.Threading.Tasks.Task UpdateWeeklySalaryIsPaid(string url, string employeeName, DateTime startDate, DateTime endDate)
+        public System.Threading.Tasks.Task UpdateWeeklySalaryIsPaid(string employeeName, DateTime startDate, DateTime endDate)
         {
             throw new NotImplementedException();
         }
