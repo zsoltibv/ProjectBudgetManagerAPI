@@ -20,7 +20,7 @@ namespace ProjectBudgetManagerAPI.Controllers
         }
 
         [HttpPost("AddAllData")]
-        public async Task<IActionResult> ProcessJsonFile(IFormFile jsonFile)
+        public async Task<IActionResult> ProcessJsonFile([FromForm] IFormFile jsonFile)
         {
             if (jsonFile != null && jsonFile.Length > 0)
             {
