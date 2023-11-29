@@ -313,10 +313,9 @@ namespace ProjectBudgetManagerAPI.Services
                     EmployeeId = emp.EmployeeId,
                     StartDate = startDate,
                     EndDate = endDate,
-                    TotalHours = employee.TotalHours,
                     GrossAmount = employee.GrossAmount,
                     GrossAmountAfterTax = employee.GrossAmount - employee.Tax,
-                    IsPaid = false
+                    IsPaid = 0
                 };
 
                 var mapped = _mapper.Map<WeeklySalaryDTO, WeeklySalary>(weeklySalaryDTO);
