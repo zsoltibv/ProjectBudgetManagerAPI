@@ -40,7 +40,7 @@ namespace ProjectBudgetManagerAPI.Services
                     }).ToList(),
                 };
 
-                if (workDays.EmployeeTasks.Count != 0)
+                if(workDays.EmployeeTasks.Count != 0)
                 {
                     workDaysList.Add(workDays);
                 }
