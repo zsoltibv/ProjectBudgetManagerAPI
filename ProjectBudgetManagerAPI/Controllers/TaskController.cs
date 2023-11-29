@@ -17,12 +17,12 @@ namespace ProjectBudgetManagerAPI.Controllers
             _taskService = taskService ?? throw new ArgumentNullException(nameof(TaskService));
         }
 
-        [HttpGet("GetAllTasks/{employeeId}")]
-        public async Task<IActionResult> GetAllTasks(Guid employeeId)
+        [HttpGet("GetAllTasksOfEmployeeInAnInterval")]
+        public async Task<IActionResult> GetAllTasksOfEmployeeInAnInterval(Guid employeeId, DateTime startDate, DateTime endDate)
         {
             try
             {
-                var tasks = await _taskService.GetAll(employeeId);
+                var tasks = await _taskService.GetAllTasksOfEmployeeInAnInterval(employeeId, startDate, endDate);
                 return Ok(tasks);
             }
             catch (Exception ex)
@@ -30,6 +30,7 @@ namespace ProjectBudgetManagerAPI.Controllers
                 return StatusCode(500);
             }
         }
+
 
         [HttpGet("GetTaskById/{taskId}")]
         public async Task<IActionResult> GetTaskById(Guid taskId)
