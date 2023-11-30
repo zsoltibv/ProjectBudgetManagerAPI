@@ -28,6 +28,8 @@ builder.Services.AddScoped<ITaskService, TaskService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IImportAndDeserializeDataService, ImportAndDeserializeDataService>();
 builder.Services.AddScoped<IExportDataToDbService, ExportDataToDbService>();
+builder.Services.AddScoped<ISalaryService, SalaryService>();
+builder.Services.AddScoped<IBudgetService, BudgetService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
