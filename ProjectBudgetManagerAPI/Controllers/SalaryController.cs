@@ -15,12 +15,26 @@ namespace ProjectBudgetManagerAPI.Controllers
             _salaryService = salaryService ?? throw new ArgumentNullException(nameof(ExportDataToDbService));
         }
 
-        [HttpPut("PaySalary")]
-        public async Task<IActionResult> PaySalary([FromBody] Guid employeeId, DateTime startDate, DateTime endDate)
+        [HttpPut("PaySalary/{employeeId}")]
+        public async Task<IActionResult> PaySalary(Guid employeeId, DateTime startDate, DateTime endDate)
         {
             try
             {
                 var result = await _salaryService.PaySalaryForEmployee(employeeId, startDate, endDate);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetSalary/{employeeId}")]
+        public async Task<IActionResult> GetSalaries(Guid employeeId)
+        {
+            try
+            {
+                var result = await _salaryService.GetSalariesOfEmployee(employeeId);
                 return Ok(result);
             }
             catch (Exception ex)

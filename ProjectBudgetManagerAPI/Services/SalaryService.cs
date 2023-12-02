@@ -57,5 +57,19 @@ namespace ProjectBudgetManagerAPI.Services
 
             return null;
         }
+
+        public async Task<List<WeeklySalary>> GetSalariesOfEmployee(Guid employeeId)
+        {
+            var salaries = await _projectBudgetManagerDbContext.WeeklySalaries
+                .Where(s => s.EmployeeId == employeeId)
+                .OrderByDescending(s => s.StartDate)
+                .Include(s => s.Employee)
+                .ToListAsync();
+
+            if (salaries != null)
+                return salaries;
+
+            return null;
+        }
     }
 }
